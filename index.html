@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Economia Doméstica e Finanças Pessoais</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header>
+    <nav>
+      <a id="logo" href="#home">
+        <img src="imgs/currency_bitcoin_38dp_0981F1_FILL0_wght400_GRAD0_opsz40.png" alt="">
+        <h3>Economia Doméstica e Finanças Pessoais</h3>
+      </a>
+      <ul>
+        <li><a href="#home">Início</a></li>
+        <li><a href="#simulador">Simulador</a></li>
+        <li><a href="#dicas">Dicas</a></li>
+        <li><a href="#glossario">Glossário</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="container">
+      <h1>Nosso Objetivo</h1>
+      <p>
+        Desenvolver um site educativo que explore o tema Economia Doméstica e Finanças Pessoais, integrando
+        conhecimentos de Matemática, Geografia, Sociologia e Português.
+        O projeto estimula o pensamento crítico, a organização financeira pessoal e a criatividade digital, mostrando
+        como o planejamento e o consumo consciente podem melhorar a qualidade de vida e promover responsabilidade
+        social.
+      </p>
+    </section>
+
+    <!-- === GRID ORGÂNICO === -->
+    <div class="grid-organico">
+
+      <!-- SIMULADOR -->
+      <section id="simulador" class="container2">
+        <div class="card">
+          <h2>Calculadora de Orçamento</h2>
+
+          <label>Receita mensal (R$)
+            <input type="number" id="income" value="3000">
+          </label>
+
+          <label>Despesas fixas (R$)
+            <input type="number" id="fixedExpenses" value="1500">
+          </label>
+
+          <label>Despesas variáveis (R$)
+            <input type="number" id="variableExpenses" value="800">
+          </label>
+
+          <label>Poupança/Investimentos (R$)
+            <input type="number" id="savings" value="500">
+          </label>
+
+          <button onclick="calculate()">Calcular</button>
+
+          <div class="result" id="totalExpenses">Total de Despesas: R$ 0,00</div>
+          <div class="result" id="balance">Saldo Final: R$ 0,00</div>
+          <div class="result" id="percentSaved">Percentual Poupado: 0%</div>
+
+          <!-- Gráfico -->
+          <div class="chart">
+            <div class="bar-container">
+              <div class="bar" id="barExpenses" style="background:#e63946; height:0px">0%</div>
+              <div class="bar-label">Despesas</div>
+            </div>
+            <div class="bar-container">
+              <div class="bar" id="barSavings" style="background:#457b9d; height:0px">0%</div>
+              <div class="bar-label">Poupança</div>
+            </div>
+            <div class="bar-container">
+              <div class="bar" id="barBalance" style="background:#2a9d8f; height:0px">0%</div>
+              <div class="bar-label">Saldo</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- DICAS -->
+      <section id="dicas" class="container2">
+        <h2>Dicas de Consumo Consciente</h2>
+        <p>Aprender a consumir de forma consciente é essencial para manter o equilíbrio financeiro e contribuir para uma
+          sociedade mais sustentável.</p>
+
+        <div class="tips-grid">
+          <div class="tip-card">
+            <img src="https://cdn-icons-png.flaticon.com/512/1076/1076744.png" alt="Planejamento">
+            <h3>Planeje seus gastos</h3>
+            <p>Antes de comprar, avalie se o produto é realmente necessário. Organize seu orçamento e evite compras por
+              impulso.</p>
+          </div>
+          <div class="tip-card">
+            <img src="https://cdn-icons-png.flaticon.com/512/3190/3190613.png" alt="Prioridades">
+            <h3>Estabeleça prioridades</h3>
+            <p>Dê preferência a gastos com moradia, alimentação e saúde. O que sobrar pode ser destinado ao lazer e
+              poupança.</p>
+          </div>
+          <div class="tip-card">
+            <img src="https://cdn-icons-png.flaticon.com/512/565/565547.png" alt="Economia de energia">
+            <h3>Economize energia e água</h3>
+            <p>Pequenas atitudes, como desligar aparelhos e reduzir o tempo de banho, ajudam o planeta e o seu bolso.
+            </p>
+          </div>
+          <div class="tip-card">
+            <img src="https://cdn-icons-png.flaticon.com/512/3062/3062634.png" alt="Compras conscientes">
+            <h3>Compre de produtores locais</h3>
+            <p>Prefira produtos regionais e de pequenos comerciantes. Além de fortalecer a economia da sua comunidade,
+              você reduz o impacto ambiental com transportes e embalagens.</p>
+          </div>
+        </div>
+      </section>
+
+
+ 
+
+
+    </div>
+
+            <div class="container2"><img src="imgs/x09rr-evolu-o-do-ndice-de-gini-do-rendimento-domiciliar-per-capita-nbsp-.webp"></div>
+
+    <section id="glossario" class="container">
+      <h2>Glossário de Termos Financeiros</h2>
+      <div class="glossario-grid">
+        <div class="glossario-item">
+          <h3>💰 Orçamento</h3>
+          <p>Planejamento dos ganhos e gastos mensais.</p>
+        </div>
+        <div class="glossario-item">
+          <h3>🏦 Poupança</h3>
+          <p>Valor guardado regularmente para o futuro.</p>
+        </div>
+        <div class="glossario-item">
+          <h3>📉 Despesa Fixa</h3>
+          <p>Gastos recorrentes, como aluguel e transporte.</p>
+        </div>
+        <div class="glossario-item">
+          <h3>📈 Despesa Variável</h3>
+          <p>Gastos que variam a cada mês, como lazer ou alimentação.</p>
+        </div>
+        <div class="glossario-item">
+          <h3>💼 Investimento</h3>
+          <p>Aplicação de dinheiro para gerar lucro futuro.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Desenvolvido como atividade interdisciplinar — Economia Doméstica e Finanças Pessoais</p>
+  </footer>
+
+  <script src="script/script.js"></script>
+</body>
+
+</html>
